@@ -1,0 +1,102 @@
+.container {
+    padding: 30px;
+}
+
+/* Checkbox uchun container */
+.form-control {
+    display: block;
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Brauzerning checkboxni berkitish */
+.form-control input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Maxsus checkboxga style berish */
+.custom-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #ddd;
+}
+
+/* Sichqoncha olib borilganda orqa fon rangini o'zgartirish */
+.form-control:hover input ~ .custom-checkbox {
+    background-color: #ccc;
+}
+
+/* Checkbox tanlanganda, uning orqa fon rangini o'zgartirish */
+.form-control input:checked ~ .custom-checkbox {
+    background-color: #2D846E;
+} 
+
+/* Checkbox tanlanganligini bildiruvchi belgini yaratish */
+.custom-checkbox:after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Tanlangan paytida belgini ko'rsatish */
+.form-control input:checked ~ .custom-checkbox::after {
+    display: block;
+}
+
+/* Checkbox end */
+
+/* Maxsus radioga style berish */
+.custom-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+/* Sichqoncha olib borilganda orqa fon rangini o'zgartirish */
+.form-control:hover input ~ .custom-radio {
+    background-color: #ccc;
+}
+
+/* Checkbox tanlanganda, uning orqa fon rangini o'zgartirish */
+.form-control input:checked ~ .custom-radio {
+    background-color: #2D846E;
+} 
+
+/* Checkbox tanlanganligini bildiruvchi belgini yaratish */
+.custom-radio:after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Tanlangan paytida belgini ko'rsatish */
+.form-control input:checked ~ .custom-radio::after {
+    display: block;
+}
+
